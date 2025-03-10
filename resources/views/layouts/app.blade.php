@@ -78,7 +78,7 @@
                     <a class="nav-link {{ request()->is('buku') ? 'active' : '' }}" href="#">Buku</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->is('tentang') ? 'active' : '' }}" href="#">Tentang</a>
+                    <a class="nav-link {{ request()->is('tentang') ? 'active' : '' }}" href="#">Genre</a>
                 </li>
             </ul>
         </div>
