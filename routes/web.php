@@ -6,15 +6,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Bagian member
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+//bagian yang belum login
+Route::get('/index', [IndexControlle::class, 'index'])->name('index');
 
+//Bagian member
+Route::get('/member/home', [HomeController::class, 'home'])->name('member.home');
 
 //bagian admin
-Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
+Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
 
-
-//bagian yang belum login
-Route::get('/index', [IndexControlle::class, 'home'])->name('index');
 
 // Cia kamu yang ngertikan yang nyambungin route tuh aku ga paham jadi kamu aja yah😁😁
